@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&family=Poppins:wght@200;400&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+    <title>Tickethack</title>
+  </head>
+  <body>
+    <header id="header">
+      <div id="tickethack">
+        <a id="ticket-hack" href="home.html">Tickethack</a>
+      </div>
+      <div id="menu">
+        <div id="cart-button">
+          <a href="cart.html"><span>0</span>Cart</a>
+        </div>
+        <div id="bookings-button">
+          <a href="bookings.html">Bookings</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h2>Explore the world effortlessly by train!</h2>
+      <p>
+        Compare, book and enjoy cheap prices for train tickets: your journey
+        starts on Tickethack.
+      </p>
+      <section id="middle">
+        <div id="search-trains" class="card">
+          <form action="" method="POST">
+            <div id="places-picker">
+              <input
+                id="departure"
+                type="text"
+                placeholder="Departure"
+                name="departure"
+                value="Paris"
+              />
+              <input
+                id="arrival"
+                type="text"
+                placeholder="Arrival"
+                name="arrival"
+                value="Lyon"
+              />
+            </div>
+            <div class="form-correction">
+              <div id="date-picker">
+                <input id="date" type="date" value="2024-02-05" name="date" />
+              </div>
+              <button id="search">Search</button>
+            </div>
+          </form>
+        </div>
+        <div id="trains-list" class="card">
+          <img src="./images/train.png" alt="Train" />
+          <div class="separation-line"></div>
+
+          <p>It's time to book your future trip.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
